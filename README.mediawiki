@@ -7,8 +7,10 @@
 == Usage ==
 === Simple ===
 <code>
+<pre>
 $manifest = new CacheManifest();
 $manifest->create(); // creates a file named cache.manifest and includes common web file types
+</pre>
 </code>
 === Full usage ===
 <code>
