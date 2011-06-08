@@ -6,17 +6,15 @@
 
 == Usage ==
 === Simple ===
-'''$manifest = new CacheManifest();
-$manifest->create(); // creates a file named cache.manifest and includes common web file types'''
+$manifest = new CacheManifest();
+$manifest->create(); // creates a file named cache.manifest and includes common web file types
 
 === Full usage ===
-<code>
 $manifest = new CacheManifest();
 $manifest	->toFile("mycache.manifest")
-			->withDirectories(array('./', './images/', './stylesheets/'))
-			->withFileTypes(array('jpg', 'gif', 'png', 'css', 'js'))
-			->withNetworkFiles(array('myservice.php'))
-			->withFallbacks(array("/ offline.html"))
-			->skippingFiles(array("robots.txt"))
-			->create();
-</code>
+		->withDirectories(array('./', './images/', './stylesheets/'))
+		->withFileTypes(array('jpg', 'gif', 'png', 'css', 'js'))
+		->withNetworkFiles(array('myservice.php'))
+		->withFallbacks(array("/ offline.html"))
+		->skippingFiles(array("robots.txt"))
+		->create();
