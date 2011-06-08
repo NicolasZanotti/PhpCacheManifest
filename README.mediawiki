@@ -6,12 +6,9 @@
 
 == Usage ==
 === Simple ===
-<code>
-<pre>
-$manifest = new CacheManifest();
-$manifest->create(); // creates a file named cache.manifest and includes common web file types
-</pre>
-</code>
+'''$manifest = new CacheManifest();
+$manifest->create(); // creates a file named cache.manifest and includes common web file types'''
+
 === Full usage ===
 <code>
 $manifest = new CacheManifest();
